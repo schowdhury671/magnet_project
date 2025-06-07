@@ -6,7 +6,7 @@
         content="">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MeLFusion: Synthesizing Music from Image and Language Cues using Diffusion Models</title>
+  <title>MAGNET: A Multi-agent Framework for Finding Audio-Visual Needles by Reasoning over Multi-Video Haystacks</title>
 	
  
   <script type="text/x-mathjax-config">
@@ -110,28 +110,35 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">MeLFusion: Synthesizing Music from Image and Language Cues using Diffusion Models</h1>
-		<h1 style="font-size:2vw"><font color="#ff0000"> <b> CVPR 2024 [Highlight, Top 2.8%] </b> </font></h1> <br>
+          <h1 class="title is-1 publication-title">MAGNET: A Multi-agent Framework for Finding Audio-Visual Needles by Reasoning over Multi-Video Haystacks</h1>
+		<!-- <h1 style="font-size:2vw"><font color="#ff0000"> <b> CVPR 2024 [Highlight, Top 2.8%] </b> </font></h1> <br> -->
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://schowdhury671.github.io/">Sanjoy Chowdhury</a><sup>*1,3</sup>,</span>
+              <a href="https://schowdhury671.github.io/">Sanjoy Chowdhury</a><sup>1</sup>,</span>
             <span class="author-block">
-              <a href="https://sayannag.github.io/">Sayan Nag</a><sup>*2,3</sup>,</span>
+              Mohamed Elmoghany</a><sup>2</sup>,</span>
             <span class="author-block">
-              <a href="https://josephkj.in/">Joseph K J</a><sup>3</sup>,
+              Yohan Abeysinghe</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://feielysia.github.io">Junjie Fei</a><sup>2</sup>,
+            <span class="author-block">
+              <a href="https://sayannag.github.io/">Sayan Nag</a><sup>4</sup>,</span>
+            <span class="author-block">
+              <a href="https://salman-h-khan.github.io">Salman Khan</a><sup>3</sup>,</span>
+            <span class="author-block">
+              <a href="https://www.mohamed-elhoseiny.com">Mohamed Elhoseiny</a><sup>2</sup>,</span>
+            <span class="author-block">
             </span>
-            <span class="author-block">
-              <a href="https://research.adobe.com/person/balaji-vasan-srinivasan/">Balaji Vasan Srinivasan</a><sup>3</sup>,
-            </span>
-			<span class="author-block">
+      			<span class="author-block">
               <a href="https://www.cs.umd.edu/people/dmanocha/">Dinesh Manocha</a><sup>1</sup>
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>University of Maryland,</span>
-            <span class="author-block"><sup>2</sup>University of Toronto,</span>
-			<span class="author-block"><sup>3</sup>Adobe Research</span>
+            <span class="author-block"><sup>2</sup>KAUST</span>
+            <span class="author-block"><sup>3</sup>MBZUAI</span>
+			      <span class="author-block"><sup>4</sup>Adobe</span>
           </div>
 
           <div class="column has-text-centered">
@@ -148,7 +155,7 @@
                 </a>
               </span> -->
               <span class="link-block">
-                <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Chowdhury_MeLFusion_Synthesizing_Music_from_Image_and_Language_Cues_using_Diffusion_CVPR_2024_paper.pdf"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -158,7 +165,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://youtu.be/_CNJeiYwLsE?si=1QnqvgwbC6lq_86e"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -168,7 +175,7 @@
               </span>
 			  <!--  Link. -->
               <span class="link-block">
-                <a href="https://umd0-my.sharepoint.com/:f:/g/personal/sanjoyc_umd_edu/Eok6RG9QIZhNlGubG8-VsDIBhNMK6OOVAWuHpryEC3VnJw"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fa fa-database"></i>
@@ -178,7 +185,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/schowdhury671/melfusion/tree/main"
+                <a href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -216,7 +223,8 @@
 		<center>
         <div class="content has-text-justified" style='width:750px'>
           <p>
-            We propose MeLFusion, a model that can effectively use cues from a textual description and the corresponding image to synthesize music.
+            We propose MAGNET, a multi-agent framework that retrieves and reasons over audio-visual cues from multiple 
+            videos to generate grounded, step-wise answers to complex queries.
           </p>
         </div>
 		</center>
@@ -231,16 +239,14 @@
   <div class="container is-max-desktop">
     <div class="hero-body" style='margin-top:-25px;margin-bottom:-25px'>
 	<center>
-      <h2 class="title is-3">MelFusion Framework</h2>
+      <h2 class="title is-3">MAGNET Overview</h2>
       <img src="./static/images/Main_System.png"
                  class="interpolation-image" width=80%/></center>
       <p class="content has-text-justified">
-		Our approach MeLFusion generates music waveform $w$ conditioned on an image $I$ and a given textual instruction $Y$. 
-		Visual semantics from  $I$ is instilled into a text-to-music diffusion model (bottom green box) using a pre-trained and frozen text-to-image diffusion model (top blue box). 
-		The image $I$ is first DDIM inverted into a noisy latent $z^I_T$. The self-attention features from the decoder layers of the text-to-image LDM that consumes $z^I_T$ is infused into the cross-attention features of text-to-music LDM decoder layers, modulated by learned $\alpha$ parameters. 
-        This fusion operation that happens in the decoder (green stripes) is detailed on the right side of the figure. 
-		The music encoder projects the spectrogram representation of the music to the latent space, and the music decoder retrieves back the spectrograms. Finally, a vocoder generates the waveform $w$ from the spectrograms. 
-		Please refer to Section 3 in the manuscript for more details.
+		Our approach MAGNET generates step-wise, grounded answers to complex audio-visual queries by first retrieving the 
+    top-K relevant videos using AV-RAG, then processing them through dynamically instantiated audio-visual agents and a 
+    meta-agent aggregator. A salient frame selector module adaptively filters modality-agnostic keyframes, enhancing reasoning 
+    and generation quality. Please refer to Section 3 in the manuscript for more details.
       </p>
     </div>
   </div>
@@ -256,15 +262,20 @@
     <center>
         <div class="hero-body">
           <p class="content has-text-justified">
-			Music is a universal language that can communicate emotions and feelings. It forms an essential part of the whole spectrum of creative media, ranging from movies to social media posts. 
-			Machine learning models that can synthesize music are predominantly conditioned on textual descriptions of it. 
-			Inspired by how musicians compose music not just from a movie script, but also through visualizations, we propose MeLFusion, 
-			a model that can effectively use cues from a textual description and the corresponding image to synthesize music. 
-			MeLFusion is a text-to-music diffusion model with a novel <strong><i>visual synapse</i></strong>, which effectively infuses the semantics from the visual modality into the generated music. 
-			To facilitate research in this area, we introduce a new dataset MeLBench, and propose a new evaluation metric IMSM. 
-			Our exhaustive experimental evaluation suggests that adding visual information to the music synthesis pipeline significantly improves 
-			the quality of generated music, measured both objectively and subjectively, with a relative gain of up to 67.98% on the FAD score. 
-			We hope that our work gathers attention to this pragmatic, yet relatively under-explored research area.
+          Large multimodal models (LMMs) have shown remarkable progress in audio-visual understanding, yet they struggle with 
+          real-world scenarios that require complex reasoning across extensive video collections. Existing benchmarks for video 
+          question answering remain limited in scope, typically involving one clip per query, which falls short of representing 
+          the challenges of large-scale, audio-visual retrieval and reasoning encountered in practical applications. To bridge 
+          this gap, we introduce a <strong><i>novel task</i></strong> named <strong><i>AVHaystacksQA</i></strong>, where the goal 
+          is to identify salient segments across different videos in response to a query and link them together to generate the 
+          most informative answer. To this end, we present <strong><i>AVHaystacks</i></strong>, an audio-visual benchmark 
+          comprising 3100 annotated QA pairs designed to assess the capabilities of LMMs in multi-video retrieval and temporal 
+          grounding task. Additionally, we propose a model-agnostic, multi-agent framework <strong><i>Magnet</i></strong> to address 
+          this challenge, achieving up to 89% and 65% relative improvements over baseline methods on BLEU@4 and GPT evaluation scores 
+          in QA task on our proposed <strong><i>AVHaystacks</i></strong>. To enable robust evaluation of multi-video retrieval and 
+          temporal grounding for optimal response generation, we introduce two new metrics, <strong><i>StEM</i></strong>, which 
+          captures alignment errors between a ground truth and a predicted step sequence and <strong><i>MTGS</i></strong>, to 
+          facilitate balanced and interpretable evaluation of segment-level grounding performance.
 		  </p>
         </div>
     </center>
@@ -310,7 +321,7 @@
   <!-- TL;DR. -->
     <div class="columns is-centered has-text-centered">
       <div class="container is-max-desktop">
-        <h2 class="title is-3">Qualitative Results of MeLFusion</h2>
+        <h2 class="title is-3">Qualitative Results of MAGNET</h2>
       </div>
     </div>
 
