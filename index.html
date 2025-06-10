@@ -74,7 +74,21 @@
 </head>
 <body>
 
+<style>
+  .uniform-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
 
+  .small-image {
+    width: 75%;     /* You can adjust this */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+</style>
 
 <section class="hero">
   <div style="margin-bottom:-80px" class="hero-body">
@@ -91,7 +105,7 @@
             <span class="author-block">
               Yohan Abeysinghe</a><sup>3</sup>,</span>
             <span class="author-block">
-              <a href="https://feielysia.github.io">Junjie Fei</a><sup>2</sup>,
+              <a href="https://feielysia.github.io">Junjie Fei</a><sup>2</sup>,</span>
             <span class="author-block">
               <a href="https://sayannag.github.io/">Sayan Nag</a><sup>4</sup>,</span>
             <span class="author-block">
@@ -287,7 +301,7 @@
     <div class="container is-max-desktop">
       <div class="container pt-3">
         <div class="has-text-centered">
-          <img src="./static/images/teaser-dataset.jpeg" class="uniform-image" />
+          <img src="./static/images/teaser-dataset.jpeg" class="small-image" />
           <p class="content has-text-justified">
             The benchmark comprises 103 hours of video content from 500 video samples across 27 diverse
             categories, accompanied by carefully annotated QA pairs that temporally ground salient segments within the
@@ -306,7 +320,7 @@
     <div class="container is-max-desktop">
       <div class="container pt-3">
         <div class="has-text-centered">
-          <img src="./static/images/teaser-task.jpeg" class="uniform-image" />
+          <img src="./static/images/teaser-task.jpeg" class="small-image" />
           <p class="content has-text-justified">
           AVHaystacksQA, and introduce AVHaystacks —a new benchmark
           consisting of 3100 audio-visual QA pairs drawn from videos across diverse domains (Fig. 1). This
@@ -365,21 +379,80 @@
 
 
 
-
-
-
-
 <section class="section">
   <div class="container is-max-desktop">
-    
-
     <div class="columns is-centered has-text-centered">
       <div class="container is-max-desktop">
         <h2 class="title is-3">MAGNET Ablations</h2>
       </div>
     </div>
-  
 </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body" style="margin-top:-25px; margin-bottom:-25px;">
+    <div class="container is-max-desktop">
+      <div class="container pt-3">
+        <div class="has-text-centered">
+          <img src="./static/images/ablations.png" class="uniform-image" />
+          <p class="content has-text-justified">
+            Performance is generally best when both audio and visual modalities are used, highlighting the benefit of multi-modal information.
+            Gemini-1.5-Pro consistently outperforms Qwen-2.5-Omni across all retrieval and response alignment scores metrics, indicating the benefits 
+            of MAGNET in formulating coherent and information-rich responses.
+            Results underscore the advantage of semantically guided sampling over uniform strategies, as SFS more effectively captures informative segments, 
+            leading to better grounding, coherence, and human preference.
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body" style="margin-top:-25px; margin-bottom:-25px;">
+    <div class="container is-max-desktop">
+      <div class="container pt-3">
+        <div class="has-text-centered">
+          <img src="./static/images/gamma_vs_metrics_plots.pdf" class="uniform-image" />
+          <p class="content has-text-justified">
+          This demonstrates a steady rise in performance across all metrics as $\gamma$ increases, although a slight dip in performance 
+          is observed at $\gamma$ = 25, notably in BLEU@4 and Human Eval for \ourframework + Qwen-2.5-Omni-FT, potentially indicate the 
+          onset of overfitting or increased parameter sensitivity in that region. The varying magnitudes of the dip across metrics indicate 
+          that the effect of $\gamma$ is not uniform across different aspects of model performance.
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3">Main Results</h2>
+      </div>
+    </div>
+</div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body" style="margin-top:-25px; margin-bottom:-25px;">
+    <div class="container is-max-desktop">
+      <div class="container pt-3">
+        <div class="has-text-centered">
+          <img src="./static/images/grounding_evaluation.png" class="uniform-image" />
+          <p class="content has-text-justified">
+          Grounding evaluation and Step-wise error results on AVHaystack-50 and AVHaystack-Full datasets using MTGS
+          and STEM (SM, SH, SO, SFP, SFN) metrics respectively and Retrieval Evaluation Scores on AVHaystack-50 and 
+          AVHaystack-Full datasets.
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="hero is-light is-small">
